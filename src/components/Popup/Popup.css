@@ -1,0 +1,164 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s ease-in-out;
+    z-index: 2000;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s ease-in-out;
+}
+
+.popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    background-color: #fef0ed;
+    padding: 2.5rem 3rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    width: 90%;
+    max-width: 35rem;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: #4a2a2a;
+    transform: scale(0.9);
+    transition: transform 0.4s ease-in-out;
+}
+
+.popup-overlay.active .popup-content {
+    transform: scale(1);
+}
+
+.close-popup-btn {
+    position: absolute;
+    top: 0.9375rem;
+    right: 1.5625rem;
+    font-size: 2.1875rem;
+    color: #7a5c5c;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.popup-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    color: #4a2a2a;
+}
+
+.popup-header h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #8c5b5b;
+    position: relative;
+    padding-bottom: 0.6rem;
+}
+
+.popup-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #6a4a4a;
+}
+
+.popup-btn {
+    background-color: #efbbd8;
+    color: #4a2a2a;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.popup-btn:hover {
+    background-color: #efb2e9;
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 1.25rem rgba(0, 0, 0, 0.3);
+}
+
+.popup-footer {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    color: #412929;
+    font-style: italic;
+}
+
+.discount-popup-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(254, 240, 237, 0.477);
+    border-radius: 1rem; 
+}
+
+.discount-popup-content {
+    background-color: #ffedfd;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 20rem;
+    position: relative;
+}
+
+.discount-close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #7a5c5c;
+    cursor: pointer;
+}
+
+.discount-text {
+    font-size: 1rem;
+    color: #4a2a2a;
+    margin-bottom: 0.5rem;
+}
+
+.discount-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c48c9c;
+    background-color: #f4e5e5;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
