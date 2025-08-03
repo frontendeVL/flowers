@@ -1,0 +1,19 @@
+.flower-cards {
+    padding: 5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 7rem; 
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: minmax(15rem, 80%);
+        justify-content: center;
+        gap: 5rem;
+    }
+}
