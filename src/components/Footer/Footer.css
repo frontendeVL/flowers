@@ -1,0 +1,88 @@
+.Footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  padding: 5rem 0;
+}
+
+.footer-divider-line {
+  width: 80%; 
+  border: none;
+  height: 2px;
+  background-color: #f8fdb9;
+  margin-top: 5rem; 
+}
+
+.footer-components {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 2rem;
+  z-index: 10;
+}
+
+.footer-links {
+  display: flex;
+  gap: 8rem; 
+  align-items: center;
+}
+
+.footer-links img {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-links img:hover {
+  transform: scale(1.1);
+}
+
+.shop-logo img {
+  margin-top: 1rem;
+  width: 15rem;
+  height: auto;
+}
+
+.blur-1{
+  right: 5%;
+  bottom: 5%;
+  width: 10rem;
+  height: 15rem;
+  background: rgb(255, 251, 0);
+}
+
+.blur-2{
+  left: 5%;
+  bottom: 5%;
+  width: 10rem;
+  height: 15rem;
+  background: rgb(251, 0, 255);
+}
+
+@media (max-width: 768px) {
+  .footer-divider-line{
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  .shop-logo img{
+    width: 10rem;
+  }
+
+  .footer-links{
+    gap: 3rem;
+  }
+
+  .footer-links img{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .Footer-container{
+    gap: 3rem;
+  }
+}
