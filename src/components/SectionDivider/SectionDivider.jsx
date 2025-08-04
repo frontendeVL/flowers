@@ -3,7 +3,7 @@ import './SectionDivider.css'
 import { motion} from 'framer-motion';
 const SectionDivider = () => {
 
-  const transition = {type: 'tween', duration: 5}
+  const transition = {type: 'tween', duration: 4}
   const mobile = window.innerWidth<=768 ? true: false
 
   return (

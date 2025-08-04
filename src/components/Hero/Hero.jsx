@@ -56,7 +56,7 @@ const Hero = () => {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 100, opacity: 0 }}
-              transition={{transition,duration: 2}}
+              transition={{transition,duration: 1}}
             >
               <img className="imgPeonies-main" src={Bouquet1} alt="Bouquet 1" />
             </motion.div>
